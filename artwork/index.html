@@ -6,34 +6,63 @@
 	<title>Artwork</title>
 
 	<!-- STYLE SHEETS -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="style1.css">
-        <link rel="stylesheet" href="style2.css">
-        <link href="/site/style-my-tooltips.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/navigation_bar.css">
+        <link rel="stylesheet" href="/artworks/artwork.css">
+
+	<!-- attempt to disable caching -->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
     </head>
 
     <body>
+	<div class="container">
+	    <div class="header_panel">
 
-	<h1>Artworks</h1>
+		<!-- header banner section -->
+		<div class="banner">
+		    <a href="/index.html">
+			<img style="text-align: center; min-width: 330px; width: 75vw;padding: 0px;margin: 0px;" alt="site_name" srcset="/banners/banner-vignette.png" src="/banners/banner-vignette.png"/>  
+		    </a>
+		</div>
 
-	   <div class="navigation_bar">
-		<ul>
-		    <li>
-			<a href="/index.html">Home</a>
-		    </li>
-		    <li>
-			<a href="/about.html">About</a>
-		    </li>
-		    <li>
-			<a href="/projects/index.html">Projects</a>
-		    </li>
-		    <li>
-			<a href="/artwork/index.html">Artworks</a>
-		    </li>
-		    <li>
-			<a href="/help.html">Help</a>
-		    </li>
-	    </div>
+		<!-- Navigation Bar -->
+		<div class="navbar">
+		    <a href="/about.html">About</a>
+		    <a href="/blog.html">Blog</a>
+		    <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Artwork
+			    <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="myDropdown">
+			    <a href="/artwork/2025/index.html">2025</a>
+			    <a href="/artwork/2024/index.html">2024</a>
+			    <a href="/artwork/index.html">All</a>
+			</div>
+		    </div> 
+		    <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Projects
+			    <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="myDropdown">
+			    <a href="#">Link 1</a>
+			    <a href="#">Link 2</a>
+			    <a href="#">Link 3</a>
+			</div>
+		    </div> 
+		    <a href="/contact.html">Contact</a>
+		</div>
 
-    </body>
+	    <!-- center panel -->
+	    <div class="flex">
+		<div class="center">
+		    <div class="main_panel">
+				<h1>All Artworks</h1>
+			</div>
+		</div>
+		</div>
+		</body>
+
+    <script src="/dropdown.js"></script>
 </html>

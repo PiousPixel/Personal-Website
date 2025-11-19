@@ -1,72 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <meta name="author" content="christian">
-        <meta name="description" content="really cool site">
-        <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    </head>
-    <body>
-        
-    <header>
-        <h1>Christian's Blog</h1>
-    </header>
 
-<main>
-<!--this is the block you can copypaste to create a new "post"-->
-        <article>
-            <div class="post-header">
-                @christian <span class="timestamp">DD/MM/YYYY, HH:MM</span>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <meta name="author" content="christian">
+    <meta name="description" content="really cool site">
+
+	<!-- STYLE SHEETS -->
+	<link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/navigation_bar.css">
+        <link rel="stylesheet" href="/about.css">
+
+	<!-- attempt to disable caching -->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    </head>
+
+    <body>
+	<div class="container">
+	    <div class="header_panel">
+
+		<!-- header banner section -->
+		<div class="banner">
+		    <a href="/index.html">
+			<img style="text-align: center; min-width: 330px; width: 75vw;padding: 0px;margin: 0px;" alt="site_name" srcset="/banners/banner-vignette.png" src="/banners/banner-vignette.png"/>  
+		    </a>
+		</div>
+
+		<!-- Navigation Bar -->
+		<div class="navbar">
+		    <a href="/about.html">About</a>
+		    <a href="/blog.html">Blog</a>
+		    <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Artwork
+			    <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="myDropdown">
+			    <a href="/artwork/2025/index.html">2025</a>
+			    <a href="/artwork/2024/index.html">2024</a>
+			    <a href="/artwork/index.html">All</a>
+			</div>
+		    </div> 
+		    <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Projects
+			    <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="myDropdown">
+			    <a href="#">Link 1</a>
+			    <a href="#">Link 2</a>
+			    <a href="#">Link 3</a>
+			</div>
+		    </div> 
+		    <a href="/contact.html">Contact</a>
+		</div>
+
+	    <!-- center panel -->
+	    <div class="flex">
+		<div class="center">
+		    <div class="main_panel">
+                <header>
+                    <h1>Christian's Blog</h1>
+                </header>
+                
+                <main>
+                <!--this is the block you can copypaste to create a new "post"-->
+                <article>
+                    <div class="post-header">
+                        @christian <span class="timestamp">DD/MM/YYYY, HH:MM</span>
+                    </div>
+            
+                    <h2>Subject</h2>
+                    <p>Content</p>
+            
+                    <details class="readmore">
+                        <summary>read more</summary>
+                        <p>read more section</p>
+                    </details>
+            
+                </article>
+                </main>
             </div>
-            
-            <h2>Subject</h2>
-            <p>Content</p>
-            
-            <details class="readmore">
-                <summary>read more</summary>
-                <p>read more section</p>
-            </details>
-            
-        </article>
-        
-    <!--you can make image posts pretty easily too!-->
-        <article>
-            <div class="post-header">
-                @periwinkle <span class="timestamp">2/27/2024, 3:21pm</span>
-            </div>
-            
-            <h2>A few selfies for you</h2>
-        <!--idk how to do a lightbox style thing yet, so the fullsize images open in another tab-->
-            <div class="photosetx2">
-                <a href="images/photo1.png" target="_blank"><img alt="periwinkle in glasses" src="images/photo1.png"></a>
-                <a href="images/photo2.png" target="_blank"><img alt="periwinkle looking cute" src="images/photo2.png"></a>
-            </div>
-            
-            <p>Looking great as always for my birthday~</p>
-            <p>Here are a few of my darling Pastille as well! (posted with his permission, of course &lt;3)</p>
-            
-            <div class="photosetx3">
-                <a href="images/photo3.png" target="_blank"><img alt="pastille casting magic" src="images/photo3.png"></a>
-                <a href="images/photo4.png" target="_blank"><img alt="pastille on his broom" src="images/photo4.png"></a>
-                <a href="images/photo5.png" target="_blank"><img alt="pastille looking very sweet" src="images/photo5.png" class="cropped"></a>
-            </div>
-            
-            <p>Which is your favorite? Oh, there's no place to leave a comment is there...? In that case, I have no choice but to believe they're ALL your favorite! How kind of you~!</p>
-            
-        </article>
-        
-    <!--single image example... you don't need a heading but there's no padding under the border so i thought it looked better with one in there. it's not too hard to change the margins tho. i believe in you! (margin-top or margin-bottom should help)-->
-        <article>
-            <div class="post-header">
-                @periwinkle <span class="timestamp">6/7/2023, 4:26pm</span>
-            </div>
-            <h2>Our trip to Shortcake Shores</h2>
-            <a href="images/photo6.png" target="_blank"><img alt="periwinkle and pastille at the beach" src="images/photo6.png"></a>
-            <p>We had a lovely afternoon~ Doesn't Pastille look so sweet in his little jacket? We're quite a fashionable pair, if I do say so myself!</p>
-            
-        </article>
-</main>
-</body>
+		</div>
+		</div>
+		</body>
+
+    <script src="/dropdown.js"></script>
 </html>

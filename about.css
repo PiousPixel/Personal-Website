@@ -1,0 +1,75 @@
+* {
+    color: black;
+}
+
+.flex {
+    background: #333;
+}
+
+.center {
+    display: flex; /* Makes the child elements align horizontally */
+    height: 100vh; /* Example: Takes full viewport height */
+    border-radius: 10px;
+
+}
+
+.widget {
+    background: #333; 
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+}
+.widget-header {
+    background: #e9e0cf;
+    border-radius: 3px;
+    margin: auto;
+}
+.widget-header h1 {
+    font-size: 14px;
+    color: #e9e0cf;
+}
+
+.widget-body {
+    background: #e9e0cf;
+    border-radius: 5px;
+    margin: auto;
+}
+.widget-body p{
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+}
+
+.timestamp {
+}
+
+.separator {
+    height: 35px;
+    background: #222;
+    border-radius: 20px;
+    border: 5px solid #404040;
+    padding: 10px;
+    margin: 10px;
+}
+
+.separator img {
+    padding: 0px 10px;
+}
+
+.separator span {
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+.main_panel {
+    flex: 1;
+    flex-basis: 70%;
+    margin: 8px;
+    border: 5px solid #404040;
+    border-radius: 10px;
+    background: #222;
+}
+
