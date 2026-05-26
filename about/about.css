@@ -1,3 +1,7 @@
+* {
+    color: rgb(255, 250, 240);
+}
+
 .flex {
     background: var(--main-bg);
 }
@@ -6,29 +10,27 @@
     display: flex; /* Makes the child elements align horizontally */
     height: 100vh; /* Example: Takes full viewport height */
     border-radius: 10px;
-
+    overflow: auto;
 }
 
 .widget {
     background: var(--main-bg); 
     border-radius: 10px;
-    padding: 10px;
-    margin: 15px;
+    padding: 15px;
+    margin: 20px;
 }
 .widget-header {
-    background: var(--update-bg);
+    background: #e9e0cf;
     border-radius: 3px;
     margin: auto;
-    padding: 2px;
 }
 .widget-header h1 {
-    text-align: center;
     font-size: 14px;
-    color: var(--update-bg);
+    color: #e9e0cf;
 }
 
 .widget-body {
-    background: var(--update-bg);
+    background: #e9e0cf;
     border-radius: 5px;
     margin: auto;
 }
@@ -42,9 +44,8 @@
 }
 
 .separator {
-    text-align: center;
     height: 35px;
-    background: var(--main-bg);
+    background: var(--panel-bg);
     border-radius: 20px;
     border: 5px solid var(--border);
     padding: 10px;
@@ -52,9 +53,7 @@
 }
 
 .separator img {
-    width: 100%;
-    max-width: 30px;
-    
+    padding: 0px 10px;
 }
 
 .separator span {
@@ -62,19 +61,26 @@
     font-size: 25px;
     color: var(--font-color);
     font-weight: bold;
-    vertical-align: center;
+    vertical-align: bottom;
 }
 
 .main_panel {
-    flex: 1;
-    flex-basis: 70%;
     margin: 8px;
     border: 5px solid var(--border);
     border-radius: 10px;
     background: var(--panel-bg);
+    height: 100%;
 }
 
-.main_panel h1{
+.main_panel p{
+    text-indent: 30px;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+
+.main_panel h1, h2, h3{
     background-color: var(--update-bg);
     border: 2px solid var(--update-bg);
     border-radius: 20px;
@@ -85,27 +91,19 @@
     font-weight: bold;
 }
 
-.main_panel h2, h3{
-    border-radius: 20px;
-    display: table;
-    margin: 10px auto;
-    padding: 2px 15px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.main_panel p{
-    text-indent: 30px;
-    margin: 5px;
-    padding: 10px;
-}
-
-.side_panel {
-    flex: 1;
-    flex-basis: 30%;
-    margin: 8px;
+#profile{
+    float:right;
+    width:100%;
+    max-width:300px;
     border: 5px solid var(--border);
-    border-radius: 10px;
-    background: var(--panel-bg);
+    margin: 10px 20px
+}
+
+.img_container img{
+    float:left;
+    width:100%;
+    max-width:600px;
+    border: 5px solid var(--border);
+    margin: 10px 20px
 }
 

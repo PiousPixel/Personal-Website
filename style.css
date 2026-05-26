@@ -4,6 +4,31 @@
     src: url('/fonts/inter/InterDisplay-Medium.woff2'); /*URL to font*/
 }
 
+:root {
+    --font-color: #f4eeff;
+    --main-bg: #211c24;
+    --panel-bg: #19171a;
+    --update-bg: #332836;
+    --border: #382e3a;
+    --navbar-select: #9658a6;
+    --dropdown-bg: #4c3e4e;
+}
+
+/* unvisited link */
+a:link {
+  color: #dab0ff;
+}
+
+/* visited link */
+a:visited {
+  color: #3e3cda;
+}
+
+/* mouse over link */
+a:hover {
+  color: #36f2ff;
+}
+
 html, body {
             height: 100%; /* Ensures full height for background */
             margin: 0; /* Removes default body margin */
@@ -15,19 +40,23 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    cursor: url("cursor.png"), auto;
 
 }
 
 * {
+    font-family: "Inter";
+    font-size: 12px;
+    color: var(--font-color);
+    text-align: left;
     font-family: Inter;
-    font-size: 14px;
+    font-size: medium;
+    cursor: url("cursor.png"), pointer;
 }
 
 .banner {
-    border-radius: 20px;
-    margin: 8px;
-    border: 3px solid #202020;
+    border-radius: 10px;
+    margin: 6px;
+    border: 2px solid var(--border);
     overflow: hidden;
 }
 
@@ -36,7 +65,7 @@ body {
     padding: 10px 15px;
     margin: auto;
     width: 65%;
-    background: #333;
-    border: 5px solid #202020;
+    background: var(--main-bg);
+    border: 2px solid var(--border);
     border-radius: 0px;
 }

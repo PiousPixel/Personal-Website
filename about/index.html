@@ -1,0 +1,145 @@
+
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Me</title>
+
+	<!-- STYLE SHEETS -->
+	<link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/navigation_bar.css">
+    <link rel="stylesheet" href="/about/about.css">
+	<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+	<!-- attempt to disable caching -->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    </head>
+
+    <body>
+	<div class="container">
+	    <div class="header_panel">
+
+		<!-- header banner section -->
+		<div class="banner">
+		    <a href="/index.html">
+			<img style="text-align: center; min-width: 330px; width: 65vw;padding: 0px;margin: 0px;" alt="site_name" srcset="/banners/banner-vignette-text.png" src="/banners/banner-vignette-text.png"/> 
+		    </a>
+		</div>
+
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="/index.html">Home</a>
+		    <a href="/about">About</a>
+		    <a href="/blog.html">Blog</a>
+		    <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Artwork
+			    <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="myDropdown">
+			    <a href="/artwork/2025/index.html">2025</a>
+			    <a href="/artwork/2024/index.html">2024</a>
+			    <a href="/artwork">All</a>
+			</div>
+		    </div> 
+		    <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Projects
+			    <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="myDropdown">
+			    <a href="#">Link 1</a>
+			    <a href="#">Link 2</a>
+			    <a href="#">Link 3</a>
+			</div>
+		    </div> 
+		    <a href="/contact.html">Contact</a>
+		</div>
+
+	    <!-- center panel -->
+	    <div class="flex">
+		<div class="center">
+		    <div class="main_panel">
+
+				<img id="profile" src="/about/me.jpg" alt="old picture of me"/>
+
+				<h1>About Me</h1>
+				<p>Hey all! My name is Christian. I'm a big tech enthusiast. I love trying out new technology
+					and finding new ways to use existing technology. Since you've found this page, either you're 
+					someone I know, a potential employer, or maybe you stumbled on this site by accident. 
+					Regardless of how you made it here, traveller, you are welcome to hang out. 
+				</p>
+
+				<p><a href="https://www.youtube.com/watch?v=5NeS4ueaU6w">What's that? You want to hear my story?</a></p>
+
+				<p>For hopefully obvious reasons, I'm not going to put out potentially sensitive information like my
+					age, shoe size, hometown, number of pets, height, place of work, etc. However, I will take this chance 
+					to rant about some things that I enjoy doing because that's probably a lot more interesting.
+				</p>
+
+				<h1>My Hobbies</h1>
+
+				<p>
+					In recent years, I've started to fall back to a lot of the hobbies I had when I was a kid. Namely drawing, playing guitar,
+					and occasional programming (admittedly probably not as much as I should). However, I have picked up some new hobbies, like 
+					learning to use a Linux desktop, home-labbing, and making videos on YouTube.
+				</p>
+
+				<p>
+					I've been spending a lot of my time learning how to draw "correctly" by learning fundamentals and really understanding 
+					the form of the things I draw. When I was a kid, I never really tried drawing from imagination, nor learning how objects
+					actually existed in 3D space. Most of the time, my drawing would just consist of copying down a frame of an anime
+					that I liked, or following drawing tutorials on <a href="https://dragoart.com/">DragoArt</a>. Thankfully, after many years
+					of drawing, I finally feel like I can consistently draw what I'm trying to draw, without just copying the contours of
+					the figure I'm trying to draw. Thinking in 3D really helps you to understand why others draw certain lines and shapes when
+					making their own drawings. It's really opened my eyes to the importance of observation when making art. If you can't properly
+					break down what you're observing into easily understandable shapes, it's easy to get lost in details.
+				</p>
+
+				<p>
+					Guitar is something that I've practiced since I was around 7 years old or so. I mostly got into it because some of my family
+					were really into rock, and started learning the guitar to play their favorite songs. At some point I decided it'd look cool 
+					to play the guitar, so my Uncle bought me my first Ibanez electric guitar. Similarly to my approach to art, I didn't really 
+					take time to study and learn fundamentals, I just wanted to cover songs that already exist. I'm still kind of like that today.
+					I've learned chords and progressions mostly just from raw mileage from playing a bunch of songs from various artists. I wouldn't 
+					consider myself amazing at guitar now, but I can learn how to comfortably play a song that's not too complicated in a half hour or so.
+				 	I have posted guitar covers in the past, but it's not really something I do anymore. That being said, I have made a few recordings of
+					covers that I may upload at some point after I workshop them a little bit.			
+				</p>
+
+				<p>
+					Programming is both my hobby, and the career I've decided to pursue. If I'm being totally honest, I sort of fell into this field without too much thought.
+					In high school I took a couple of programming classes to get out of taking a foreign language class (I was lazy), and had a pretty easy time with it.
+					At the time, programming was extremely lucrative and highly sought after. I remember being told multiple times throughout high school and college that
+					"If you're a programmer, you're set for life. Pretty much every company is going to need programmers." Because of this, I decided to go all in on programming when I went 
+					to college. It took me an extra year, but I graduated with a BS in Computer Engineering. Since graduating, I've spent some time at my job learning
+					C#, SQL, and WinForms. On my own time, I've learned bits and pieces of the DevOps cycle, designed and created a RESTful API, and revisited my web design skills
+					(that's what I'm doing now!). I've also learned that not keeping up with programming and business trends will cause you to be left behind, as in some ways
+					I feel like I'm having to totally relearn programming after taking the past year or so off. But, I'm slowly regaining my confidence in development, and hope
+					to work on some bigger projects soon!
+				</p>
+
+				<div class="img_container">
+					<img src="/about/awesome-rice.png" alt="Picture of my current awesomewm desktop."/>
+				</div>
+
+				<p>
+					Linux has been my main hobby for the past couple years now. There's something that I genuinely find addicting about the amount of choice and customization
+					that Linux offers. I recently have gotten into the trend of <a href="https://jie-fang.github.io/blog/basics-of-ricing">"ricing"</a> and is how I spend a lot
+					of my time when at my PC. My current desktop of choice at the moment is awesomewm, though I have dabbled in a few other environments like KDE Plasma, Hyprland,
+					and i3wm. At the moment, I'm using this cool foresty green theme that I designed myself using various awesome widgets and looking through A LOT of dotfiles.
+				</p>
+
+				<h1>My Favorite Shows</h1>
+			</div>
+		</div>
+		</div>
+		</body>
+
+    <script src="/dropdown.js"></script>
+</html>
